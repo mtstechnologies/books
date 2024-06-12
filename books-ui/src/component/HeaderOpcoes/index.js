@@ -16,7 +16,7 @@ const OptionsCategory = styled.li`
 `
 
 function OpcoesHeader() {
-    const textoOpcao = ['CATEGORIAS', 'FAVORITOS', 'MINHA ESTANTE'];
+    const textoOpcao = ['CATEGORY', 'FAVORITES', 'MY BOOKSHELF'];
     return (
         <>
             <Options>
