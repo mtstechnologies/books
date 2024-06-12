@@ -1,11 +1,15 @@
-import Logo from "../Logo";
+import HeaderOpcoes from "../HeaderOpcoes";
+import HeaderIcon from "../HeaderIcon";
+import HeaderLogo from "../HeaderLogo";
 import "./styles.css";
 function Header() {
 
     return (
         <>
             <header className="App-header">
-                <Logo></Logo>
+                <HeaderLogo />
+                <HeaderOpcoes />
+                <HeaderIcon />
             </header>
         </>
 

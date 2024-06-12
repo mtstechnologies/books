@@ -1,6 +1,6 @@
 import logo from "../../assets/img/logo.svg";
 import "./styles.css"
-function Logo() {
+function HeaderLogo() {
     return(
         <div className="logo">
             <img src={logo} alt="logo" className="logo-img"/>
@@ -8,4 +8,4 @@ function Logo() {
         </div>
     )
 }
-export default Logo;
+export default HeaderLogo;
