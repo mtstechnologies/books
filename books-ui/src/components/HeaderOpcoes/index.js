@@ -15,7 +15,7 @@ const OptionsCategory = styled.li`
         min-width: 120px;
 `
 
-function OpcoesHeader() {
+function HeaderOpcoes() {
     const textoOpcao = ['CATEGORY', 'FAVORITES', 'MY BOOKSHELF'];
     return (
         <>
@@ -27,4 +27,4 @@ function OpcoesHeader() {
         </>
     )
 }
-export default OpcoesHeader;
+export default HeaderOpcoes;
