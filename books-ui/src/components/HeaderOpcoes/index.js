@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const Options = styled.ul`
         display: flex;
 `
@@ -16,12 +16,12 @@ const OptionsCategory = styled.li`
 `
 
 function HeaderOpcoes() {
-    const textoOpcao = ['CATEGORY', 'FAVORITES', 'MY BOOKSHELF'];
+    const textoOpcao = ['CATEGORY', 'FAVORITES', 'BOOKSHELF'];
     return (
         <>
             <Options>
                 {textoOpcao.map((texto) => (
-                    <OptionsCategory><p>{texto}</p></OptionsCategory>
+                    <Link to={`/${texto.toLowerCase()}`}><OptionsCategory><p>{texto}</p></OptionsCategory></Link>
                 ))}
             </Options>
         </>
