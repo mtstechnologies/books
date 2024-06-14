@@ -3,6 +3,8 @@ const express = require("express")
 const rotaLivro = require("./rotas/livro")
 
 const app = express()
+//para que o express possa receber um body do tipo JSON
+app.use(express.json())
 
 app.use('/livros', rotaLivro)
 
