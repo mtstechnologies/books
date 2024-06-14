@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+import Home from './rotas/Home';
 import { createGlobalStyle } from 'styled-components';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from './components/Header';
+import Favorites from './rotas/Favorites';
 
 const GlobalStyle = createGlobalStyle`
 body {
@@ -31,8 +32,8 @@ root.render(
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/favorites" element={<p>Oi!</p>} />
-        <Route path="/" element={<App />} />
+        <Route path="/favorites" element={<Favorites/>} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
 
